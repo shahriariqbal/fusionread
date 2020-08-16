@@ -1,0 +1,282 @@
+/* p {
+  font-size: 20px;
+  font-family: SFUIDisplay-Regular;
+  padding: 20px;
+ } */
+
+/* font-family: 'Playfair Display', serif; */
+
+@font-face {
+  font-family: SFUIDisplay-Regular;
+  src: url(../css/font/SFDisplay-Regular.otf);
+}
+
+/*************************************** Cover Section ***************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+.cover {
+  width: auto;
+  height: 100vh;
+}
+
+.bar {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  padding-top: 46px;
+  padding-left: 50px;
+}
+
+.login_signup_publish {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-top: 49px;
+}
+
+.login {
+  font-family: SFUIDisplay-Regular;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #0d0321;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 2px solid;
+}
+
+.signup {
+  font-family: SFUIDisplay-Regular;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #0d0321;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+
+
+.publish {
+  width: 135px;
+  height: 39px;
+  border-radius: 12px 8px 10px 7px;
+  background-color: #b4e680;
+  transform: skew(-5deg);
+  margin-right: 51px;
+  border: none;
+  font-family: SFUIDisplay;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Header Content */
+
+.header-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 131px;
+}
+
+.point {
+  width: 22px;
+  height: 22px;
+  margin-right: 45px;
+  margin-top: -150px;
+}
+.header-text {
+  font-family: PlayfairDisplay;
+  font-size: 42px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #16161d;
+}
+
+.oval {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background: #b8e986;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -50px;
+  margin-bottom: 45px;
+  z-index: -1;
+}
+
+.dotdot {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: -100px;
+  margin-bottom: 100px;
+  transform: rotate(133deg);
+}
+
+/* Search */
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 96px;
+}
+
+.search_input {
+  border: none;
+  border-left: 4px solid #b8e986;
+  box-shadow: 1px 1px #f0f4f5;
+  /* width: 57%; */
+  width: 898px;
+  height: 43px;
+
+  opacity: 0.65;
+  font-family: SFUIDisplay;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #202026;
+}
+
+.search_icon {
+  height: 44px;
+  background: #fff;
+  border: none;
+  margin-left: -30px;
+  margin-bottom: -14px;
+}
+
+/*************************************** On Trend Section ***************************************/
+
+.ontrend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.point_yellow {
+  width: 22px;
+  height: 22px;
+  margin-right: 190px;
+  margin-top: -160px;
+}
+
+.trend_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 57%; */
+  width: 898px;
+}
+
+.point_red {
+  width: 22px;
+  height: 22px;
+  margin-left: 137px;
+  margin-top: 30px;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 121px;
+  height: 141px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+  border: solid 0.1px #c8c8c8;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.card_image {
+  width: 100px;
+  height: 74px;
+  border-radius: 8px;
+  background-color: #090909;
+}
+
+.card_content {
+  width: 111px;
+  height: 36px;
+  font-family: SFUIDisplay;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #16161d;
+  margin-top: 8px;
+  padding: 0px  8px;
+}
+
+.title_slider {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.slider_title {
+
+  font-family: SFUIDisplay;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0d0321;
+  margin-bottom: 10px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+  
+}
+
+.explore_text {
+
+  font-family:  SFUIDisplay-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #16161d;
+}
