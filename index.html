@@ -10,10 +10,9 @@
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
-
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,7 +23,7 @@
     <section class="cover">
       <div class="bar">
         <div class="logo animate__animated animate__pulse">
-          <img src="./img/Logo-Front.png" alt="" />
+          <img class="logo_img" src="./img/Logo-Front.png" alt="" />
         </div>
 
         <div class="login_signup_publish">
@@ -37,30 +36,44 @@
       </div>
 
       <div class="header-content">
-        <div class="point animate__animated animate__backInLeft"><img src="./img/yellow point.png" alt="" /></div>
-
-        <div class="header-text animate__animated animate__pulse">
-          Explore hundreds of articles <br /> 
-           with just a click 
+        <div class="point animate__animated animate__backInLeft">
+          <img class="point_image" src="./img/yellow point.png" alt="" />
         </div>
 
-        <div class="oval  animate__animated animate__bounce"><span class="dotdot "> ........... </span></div>
+        <div class="header-text animate__animated animate__pulse">
+          Explore hundreds of articles <br />
+          with just a click
+        </div>
+
+        <div class="oval animate__animated animate__bounce">
+          <span class="dotdot"> ........... </span>
+        </div>
       </div>
 
       <div class="search">
-        <input
+        <!--         <input
           type="text"
           placeholder="search for articles, blog or any readings…"
           class="search_input"
-        />
+        /> -->
+
+        <div class="container_search">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="search for articles, blog or any readings…"
+          />
+          <div class="suggestions"></div>
+        </div>
+
         <a href="" class="search_icon">
-          <img src="./img/Search1.png" alt="" />
+          <img class="search_icon_image" src="./img/Search1.png" alt="" />
         </a>
       </div>
 
       <div class="ontrend">
         <div class="point_yellow animate__animated animate__backInRight">
-          <img src="./img/yellow point.png" alt="" />
+          <img class="point_yellow_img" src="./img/yellow point.png" alt="" />
         </div>
 
         <div class="title_slider">
@@ -94,7 +107,7 @@
               </div>
             </div>
 
-            <div class="card_container">
+            <div class="card_container hidden3">
               <div>
                 <img class="card_image" src="./img/demo.jpg" alt="" />
               </div>
@@ -103,7 +116,7 @@
               </div>
             </div>
 
-            <div class="card_container">
+            <div class="card_container hidden2">
               <div>
                 <img class="card_image" src="./img/demo.jpg" alt="" />
               </div>
@@ -112,7 +125,7 @@
               </div>
             </div>
 
-            <div class="card_container">
+            <div class="card_container hidden1">
               <div>
                 <img class="card_image" src="./img/demo.jpg" alt="" />
               </div>
@@ -121,23 +134,248 @@
               </div>
             </div>
 
-            <div class="card_container">
+            <div class="card_container hidden">
               <div>
                 <img class="card_image" src="./img/demo.jpg" alt="" />
               </div>
               <div class="card_content">
-                Explore Your Inner Artist
+                Explore Your Inner last
               </div>
             </div>
           </div>
         </div>
 
-        <div class="point_red animate__animated  animate__backInDown"><img src="./img/red point.png" alt="" /></div>
+        <div class="point_red animate__animated animate__backInDown">
+          <img class="point_yellow_img" src="./img/red point.png" alt="" />
+        </div>
+
+
       </div>
 
       <div class="explore">
-        <img style="width: 15px; height: 28px; margin-bottom: 8px;" src="./img/Explor.png" alt="" />
-        <p class="explore_text">Scroll down to explore!</p>
+        <img
+          style="width: 15px; height: 28px; margin-bottom: 8px;"
+          src="./img/Explor.png"
+          alt=""
+        />
+        <p class="explore_text animate__animated animate__fadeInDown animate__repeat-3">Scroll down to explore!</p>
+      </div>
+    </section>
+
+    <section class="body_content">
+      <div class="categories">
+        <div><a class="link_categories" href=""> Latest Articles</a></div>
+        <div><a class="link_categories" href=""> Popular </a></div>
+        <div class="oval_categories"></div>
+
+        <div><a class="link_categories" href=""> Recommend </a></div>
+        <div><a class="link_categories" href=""> Arts </a></div>
+        <div><a class="link_categories" href=""> Science</a></div>
+        <div><a class="link_categories" href=""> Technology </a></div>
+        <div><a class="link_categories" href=""> Entertainment </a></div>
+        <div><a class="link_categories" href=""> Finance </a></div>
+        <div><a class="link_categories" href=""> Business </a></div>
+        <div><a class="link_categories" href=""> Creativity </a></div>
+        <div><a class="link_categories" href=""> Lifestyle </a></div>
+      </div>
+
+      <div class="AllCards_body_container">
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <div class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+          <div class="BiggerImageCard_body">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_viewAll">
+        <a class="viewAll_text" href="">
+          View All
+          <img src="./img/Right-arrow.png" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer_upper">
+        <a href="" style="text-decoration: none;">
+          <img src="./img/Cursor.png" alt="" />
+        </a>
+        <a style="border-left: 0px;" class="footer_upper_link" href="">
+          V4M2C1
+        </a>
+        <a class="footer_upper_link" href=""> Vancouver </a>
+        <a class="footer_upper_link" href=""> BC </a>
+        <a class="footer_upper_link" href=""> Canada </a>
+      </div>
+
+      <div class="footer_lower">
+        <div class="footer_lower_first">
+          <a class="footer_lower_first_link" href=""> About </a>
+          <a class="footer_lower_first_link" href=""> Term & Conditions </a>
+          <a class="footer_lower_first_link" href=""> Privacy Policy </a>
+        </div>
+        <div class="footer_lower_middle">
+          <img src="./img/Footer logo.png" alt="" />
+        </div>
+        <div class="footer_lower_last">
+          <p
+            class="footer_lower_last_link"
+            style="
+              margin-right: 5px;
+              padding-right: 5px;
+              border-right: 0.5px solid;
+            "
+          >
+            ©2020 FusionRead.Com
+          </p>
+          <p class="footer_lower_last_link">All Rights Reserved</p>
+        </div>
       </div>
     </section>
 
