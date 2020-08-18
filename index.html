@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
+    <!--     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <link
       rel="stylesheet"
@@ -17,9 +17,13 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Document</title>
+    <link rel="icon" href="./img/Logo-Nav 1x.png" type="" sizes="16x16" />
+    <title>Fusionread</title>
   </head>
+
   <body>
+    <!--  *******************************************Cover Section**************************************************** -->
+
     <section class="cover">
       <div class="bar">
         <div class="logo animate__animated animate__pulse">
@@ -31,7 +35,7 @@
 
           <p class="signup">SIGNUP</p>
 
-          <button class="publish">   PUBLISH   </button>
+          <button class="publish">PUBLISH</button>
         </div>
       </div>
 
@@ -50,13 +54,9 @@
         </div>
       </div>
 
-      <div class="search">
-        <!--         <input
-          type="text"
-          placeholder="search for articles, blog or any readings…"
-          class="search_input"
-        /> -->
+      <!-- ***********************Search********************************** -->
 
+      <div class="search">
         <div class="container_search">
           <input
             class="search-input"
@@ -68,9 +68,9 @@
           </a>
           <div class="suggestions"></div>
         </div>
-
-
       </div>
+
+      <!-- ***********************On Trend ********************************** -->
 
       <div class="ontrend">
         <div class="point_yellow animate__animated animate__backInRight">
@@ -81,7 +81,6 @@
           <p class="slider_title">On Trend</p>
 
           <div class="trend_slider">
-
             <div class="card_container">
               <div>
                 <img class="card_image" src="./img/demo.jpg" alt="" />
@@ -100,15 +99,14 @@
               </div>
             </div>
 
-           <!--  full image card -->
+            <!--**********  full image card ***********-->
 
             <div class="fullImageCard_container">
               <div>
                 <img class="fullImageCard_image" src="./img/demo.jpg" alt="" />
               </div>
-      
-                  <p class="fullImageCard_content"> Explore Your Inner Artist </p> 
-           
+
+              <p class="fullImageCard_content">Explore Your Inner Artist</p>
             </div>
 
             <div class="card_container hidden3">
@@ -120,13 +118,14 @@
               </div>
             </div>
 
+            <!--**********  full image card ***********-->
+
             <div class="fullImageCard_container hidden2">
               <div>
                 <img class="fullImageCard_image" src="./img/demo.jpg" alt="" />
               </div>
-      
-                  <p class="fullImageCard_content"> Explore Your Inner Artist </p> 
-           
+
+              <p class="fullImageCard_content">Explore Your Inner Artist</p>
             </div>
 
             <div class="card_container hidden1">
@@ -147,41 +146,43 @@
               </div>
             </div>
           </div>
+
+          <div class="sliderChangeArrow">
+            <a class="sliderChangeArrowBtn" style="color: #817c8a;" href=""> < </a>
+            <a class="sliderChangeArrowBtn" href=""> > </a>
+          </div>
         </div>
 
         <div class="point_red animate__animated animate__backInDown">
           <img class="point_yellow_img" src="./img/red point.png" alt="" />
         </div>
-
-
       </div>
 
       <div class="explore">
-
-<!--         <img
-          style="width: 15px; height: 28px; margin-bottom: 8px;"
-          src="./img/Explor.png"
-          alt=""
-        /> -->
-
-        <div class='icon-scroll'>  </div>
-          <p class="explore_text animate__animated animate__fadeInDown animate__repeat-3">Scroll down to explore!</p>
-
-        
+        <div class="icon-scroll"></div>
+        <p
+          class="explore_text animate__animated animate__fadeInDown animate__repeat-3"
+        >
+          Scroll down to explore!
+        </p>
       </div>
-      
-
-
-
     </section>
 
+    <!-- ****************************************************Main Body Section ************************************* -->
+
     <section class="body_content">
+      <!-- ****************************Categories ***************** -->
+
       <div class="categories">
         <div><a class="link_categories" href=""> Latest Articles</a></div>
         <div><a class="link_categories" href=""> Popular </a></div>
         <div class="oval_categories"></div>
 
-        <div><a class="link_categories link_categories_selected " href=""> Recommend </a></div>
+        <div>
+          <a class="link_categories link_categories_selected" href="">
+            Recommend
+          </a>
+        </div>
         <div><a class="link_categories" href=""> Arts </a></div>
         <div><a class="link_categories" href=""> Science</a></div>
         <div><a class="link_categories" href=""> Technology </a></div>
@@ -191,6 +192,8 @@
         <div><a class="link_categories" href=""> Creativity </a></div>
         <div><a class="link_categories" href=""> Lifestyle </a></div>
       </div>
+
+      <!-- ********************************** Body Card ***************** -->
 
       <div class="AllCards_body_container">
         <div class="BiggerImageCard_container">
@@ -354,6 +357,8 @@
       </div>
     </section>
 
+    <!--  **************************************************************Footer Section ***************************************************** -->
+
     <section class="footer">
       <div class="footer_upper">
         <a href="" style="text-decoration: none;">
@@ -380,8 +385,8 @@
           <p
             class="footer_lower_last_link"
             style="
-              margin-right: 5px;
-              padding-right: 5px;
+              margin-right: 6px;
+              padding-right: 6px;
               border-right: 0.5px solid;
             "
           >
