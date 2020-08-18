@@ -35,7 +35,10 @@
 
           <p class="signup">SIGNUP</p>
 
-          <button class="publish">PUBLISH</button>
+         <!--  <button class="publish">PUBLISH</button> -->
+
+         <a class="publishButton" href=""><img class="publishButtonImage" src="./img/pub.png" alt=""> </a>
+
         </div>
       </div>
 
@@ -57,7 +60,9 @@
       <!-- ***********************Search********************************** -->
 
       <div class="search">
-        <div class="container_search">
+
+
+<!--         <div class="container_search">
           <input
             class="search-input"
             type="text"
@@ -67,7 +72,27 @@
             <img class="search_icon_image" src="./img/Search1.png" alt="" />
           </a>
           <div class="suggestions"></div>
-        </div>
+        </div> -->
+
+        <!-- updated search -->
+
+        <form class="formContainer" autocomplete="off" action="/">
+          <div class="autocomplete">
+            <input
+              id="myInput"
+              type="text"
+              name="myCountry"
+              placeholder="Country"
+            />
+          </div>
+          <!--       <input type="submit" /> -->
+          <button class="searchButton">
+            <img class="searchButtonIcon" src="./img/Search1.png" alt="" />
+          </button>
+        </form>
+
+
+
       </div>
 
       <!-- ***********************On Trend ********************************** -->

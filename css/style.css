@@ -70,7 +70,8 @@
   text-align: center;
   color: #0d0321;
 }
-.publish {
+
+/* .publish {
   width: 135px !important;
   height: 39px !important;
   background-color: #b4e680;
@@ -85,10 +86,16 @@
   margin-left: 45px;
   border-radius: 18px 8px 22px 9px;
   cursor: pointer;
-  /*   clip-path: polygon( 94% 88%, 4% 90%, 3% 15%, 98% 0); */
-  /* clip-path: polygon( 92% 89%, 6% 95%, 3% 15%, 98% 0); */
-  /*   border-radius: 75px 30px 50px 30px; */
-  /*  transform: skew(-5deg); */
+
+} */
+
+.publishButton {
+  margin-right: 50px;
+  margin-left: 45px;
+}
+.publishButtonImage {
+  width: 135px;
+  height: 39px;
 }
 
 /**************************** Header Title **********************/
@@ -145,6 +152,8 @@
   justify-content: center;
   margin-top: 96px;
 }
+
+/* 
 .container_search {
   background: ;
   border-radius: 6px;
@@ -201,6 +210,123 @@
   border-radius: 7px;
   border: 1px solid #b8e986;
   background: #f0f4f5;
+} */
+
+/********************* updated Search *********************/
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+
+  width: 898px;
+  height: 43px;
+
+  box-shadow: 0px 1px #f0f4f5;
+}
+
+input {
+  border: none;
+  font-size: 30px;
+  opacity: 0.65;
+  font-family: SFUIDisplay-Light;
+  font-size: 20px;
+  font-weight: 300;
+
+  letter-spacing: 0.5px;
+  color: #202026;
+  border-left: 4px solid #b8e986;
+  width: 898px;
+  height: 43px;
+  outline: none;
+  padding-left: 21px;
+
+  border-radius: 6px 6px 0px 6px;
+}
+
+input[type="text"] {
+  /* background-color: #f1f1f1; */
+  width: 100%;
+}
+
+input:hover {
+  border-bottom: 1px solid #b8e986;
+}
+
+/* input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.searchButton {
+  background: transparent;
+  /*   margin-left: 27px; */
+  margin-left: 0px;
+
+  cursor: pointer;
+  border-radius: 7px;
+  height: 43px;
+  width: 32px;
+  border: none;
+  outline: none;
+
+  box-shadow: 0px 1px #f0f4f5;
+}
+
+.searchButton:hover {
+  border: 1px solid #b8e986;
+  background: #f0f4f5;
+}
+
+.searchButtonIcon {
+  width: 23px;
+  height: 23px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.autocomplete-items {
+  position: absolute;
+
+  /* border: 1px solid #f0f4f5; */
+
+  border: none;
+
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f4f5;
+
+  border-radius: 4px;
+
+  width: 100%;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #f0f4f5;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
 }
 
 /*************************************** On Trend ***************************************/
@@ -666,7 +792,8 @@
   .search {
     margin-top: 43px;
   }
-  .container_search input {
+
+  /*   .container_search input {
     font-size: 14px;
     font-weight: 300;
     width: 600px;
@@ -684,6 +811,39 @@
   .search_icon:hover {
     padding: 5px 5px 7px 5px;
     border-radius: 6px;
+  } */
+
+  .autocomplete {
+    width: 600px;
+    height: 30px;
+  }
+
+  input {
+    font-size: 14px;
+
+    width: 600px;
+    height: 30px;
+
+    padding-left: 21px;
+  }
+
+  .searchButton {
+    background: transparent;
+    /*   margin-left: 27px; */
+    margin-left: 0px;
+
+    border-radius: 5px;
+    height: 30px;
+    width: 25px;
+
+    box-shadow: 0px 1px #f0f4f5;
+  }
+
+  .searchButtonIcon {
+    width: 23px;
+    height: 23px;
+    padding-top: 5px;
+    padding-right: 6px;
   }
 
   /********************************* On Trend ***************************************/
@@ -871,9 +1031,32 @@
   .search {
     margin-top: 50px;
   }
-  .container_search input {
+  /*   .container_search input {
     width: 550px;
+  } */
+
+  .autocomplete {
+    width: 550px;
+    height: 30px;
   }
+
+  input {
+
+
+    width: 550px;
+    height: 30px;
+
+  
+  }
+
+
+
+
+
+
+
+
+
 
   /*********************************** On Trend ******************************************/
 
@@ -1050,7 +1233,9 @@
   .search {
     margin-top: 40px;
   }
-  .container_search input {
+
+
+/*   .container_search input {
     font-size: 12px;
 
     width: 400px;
@@ -1067,7 +1252,31 @@
 
   .search_icon:hover {
     padding: 4px 5px 7px 5px;
+  } */
+
+  .autocomplete {
+    width: 400px;
+  
   }
+
+  input {
+    font-size: 13px;
+
+    width: 400px;
+ 
+
+   
+  }
+
+
+
+  .searchButtonIcon {
+    width: 20px;
+    height: 20px;
+
+  }
+
+
 
   /*********************************************** On Trend Section *********************************************/
 
