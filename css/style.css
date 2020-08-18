@@ -1,17 +1,15 @@
-
-
 @font-face {
   font-family: SFUIDisplay-Regular;
   src: url(../css/font/SFDisplay-Regular.otf);
 }
+* {
+  box-sizing: border-box;
+}
+
 
 /*************************************** Cover Section ***************************************/
 
-* {
-  box-sizing: border-box;
 
- 
-}
 
 .cover {
   width: auto;
@@ -257,7 +255,17 @@
   width: 121px;
   height: 141px;
   border-radius: 8px;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+
+/*   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08); */
+
+/* box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); */
+/* 
+box-shadow:
+  0 7px 30px -10px rgba(150,170,180,0.5); */
+
+  box-shadow:
+  0 10px 10px 10px rgba(150,170,180,0.5);
+
   border: solid 0.1px #c8c8c8;
   background-color: #ffffff;
   margin-right: 10px;
@@ -311,6 +319,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 94px;
+  position: relative;
   
 }
 
@@ -324,7 +333,55 @@
   line-height: normal;
   letter-spacing: normal;
   color: #16161d;
+  margin-right: 13px;
+
 }
+
+
+
+
+
+
+
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
+
+}
+
+.icon-scroll{
+  width: 15px;
+  height: 28px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #000;
+  border-radius: 25px;
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #000;
+  margin-left: -2px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0%{
+    opacity: 1;}
+  100%{
+    opacity: 0;
+    transform: translateY(20px);}
+}
+
 
 
 /* *************************************Body Content************************************* */
@@ -392,6 +449,11 @@
   border-radius: 10px;
   margin-right: 30px;
 
+
+
+
+ 
+
  }
 
 .BiggerImageCard_image_container {
@@ -399,7 +461,9 @@
   width: 290px;
   height: 361px;
   border-radius: 10px;
-  
+ 
+  box-shadow:
+  0 10px 10px 10px rgba(150,170,180,0.5);
   } 
 
 
@@ -421,6 +485,9 @@
 
   position: relative;
   bottom: 55px;
+
+  box-shadow:
+  0 10px 10px 10px rgba(150,170,180,0.5);
 } 
 
 .BiggerImageCard_title {
