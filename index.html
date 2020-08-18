@@ -31,7 +31,7 @@
 
           <p class="signup">SIGNUP</p>
 
-          <button class="publish">PUBLISH</button>
+          <button class="publish">   PUBLISH   </button>
         </div>
       </div>
 
@@ -63,12 +63,13 @@
             type="text"
             placeholder="search for articles, blog or any readings…"
           />
+          <a href="" class="search_icon">
+            <img class="search_icon_image" src="./img/Search1.png" alt="" />
+          </a>
           <div class="suggestions"></div>
         </div>
 
-        <a href="" class="search_icon">
-          <img class="search_icon_image" src="./img/Search1.png" alt="" />
-        </a>
+
       </div>
 
       <div class="ontrend">
@@ -80,14 +81,6 @@
           <p class="slider_title">On Trend</p>
 
           <div class="trend_slider">
-            <div class="card_container">
-              <div>
-                <img class="card_image" src="./img/demo.jpg" alt="" />
-              </div>
-              <div class="card_content">
-                Explore Your Inner Artist
-              </div>
-            </div>
 
             <div class="card_container">
               <div>
@@ -105,6 +98,17 @@
               <div class="card_content">
                 Explore Your Inner Artist
               </div>
+            </div>
+
+           <!--  full image card -->
+
+            <div class="fullImageCard_container">
+              <div>
+                <img class="fullImageCard_image" src="./img/demo.jpg" alt="" />
+              </div>
+      
+                  <p class="fullImageCard_content"> Explore Your Inner Artist </p> 
+           
             </div>
 
             <div class="card_container hidden3">
@@ -116,13 +120,13 @@
               </div>
             </div>
 
-            <div class="card_container hidden2">
+            <div class="fullImageCard_container hidden2">
               <div>
-                <img class="card_image" src="./img/demo.jpg" alt="" />
+                <img class="fullImageCard_image" src="./img/demo.jpg" alt="" />
               </div>
-              <div class="card_content">
-                Explore Your Inner Artist
-              </div>
+      
+                  <p class="fullImageCard_content"> Explore Your Inner Artist </p> 
+           
             </div>
 
             <div class="card_container hidden1">
@@ -177,7 +181,7 @@
         <div><a class="link_categories" href=""> Popular </a></div>
         <div class="oval_categories"></div>
 
-        <div><a class="link_categories" href=""> Recommend </a></div>
+        <div><a class="link_categories link_categories_selected " href=""> Recommend </a></div>
         <div><a class="link_categories" href=""> Arts </a></div>
         <div><a class="link_categories" href=""> Science</a></div>
         <div><a class="link_categories" href=""> Technology </a></div>

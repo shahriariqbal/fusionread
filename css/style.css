@@ -2,6 +2,29 @@
   font-family: SFUIDisplay-Regular;
   src: url(../css/font/SFDisplay-Regular.otf);
 }
+
+@font-face {
+  font-family: SFUIDisplay-Bold;
+  src: url(../css/font/SFDisplay-Bold.otf);
+}
+
+@font-face {
+  font-family: SFUIDisplay-Light;
+  src: url(../css/font/SFDisplay-Light.otf);
+}
+
+@font-face {
+  font-family: SFUIDisplay-Medium;
+  src: url(../css/font/SFDisplay-Medium.otf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url(../css/font/PlayfairDisplay-Regular.ttf);
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -47,8 +70,8 @@
   letter-spacing: 0.5px;
   text-align: center;
   color: #0d0321;
-  padding-right: 5px;
-  margin-right: 5px;
+  padding-right: 9px;
+  margin-right: 9px;
   border-right: 2px solid;
 }
 
@@ -69,22 +92,24 @@
 
 
 .publish {
-  width: 135px;
-  height: 39px;
-  border-radius: 13px 7px 18px 17px;
+  width: 135px !important;
+  height: 39px !important;
+  border-radius: 35px 20px 39px 30px;
   background-color: #b4e680;
  /*  transform: skew(-5deg); */
   margin-right: 51px;
   border: none;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Bold;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.5px;
   text-align: center;
   outline:none;
-  clip-path: polygon( 97% 88%, 3% 90%, 0 15%, 100% 0);
+  clip-path: polygon( 94% 88%, 4% 90%, 3% 15%, 98% 0);
   margin-left: 45px;
 }
+
+
 
 /* Header Content */
 
@@ -103,7 +128,7 @@
   margin-top: -150px;
 }
 .header-text {
-  font-family: PlayfairDisplay;
+  font-family: PlayfairDisplay-Regular;
   font-size: 42px;
   font-weight: normal;
   font-stretch: normal;
@@ -166,6 +191,8 @@
 
 
 /* *************************************search******************* */
+
+
 .container_search {
   background: ;
   border-radius: 6px;
@@ -178,7 +205,7 @@
   border: 0;
   font-size: 30px;
   opacity: 0.65;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Light;
   font-size: 20px;
   font-weight: 300;
   font-stretch: normal;
@@ -190,7 +217,18 @@
   width: 898px;
   height: 43px;
   outline:none;
+
+  padding-left: 21px;
 }
+
+.container_search input:hover{
+  border-bottom: 1px solid #b8e986;
+}
+
+
+
+
+
 .suggestions {
   border-top: 1px solid #f0f4f5 ;
 }
@@ -210,9 +248,23 @@
 .search_icon {
   height: 44px;
   background: transparent;
-  border: none;
-  margin-left: -30px;
-  margin-bottom: -14px;
+  /* border: none; */
+/*   margin-left: -40px; */
+  /* margin-bottom: -14px; */
+}
+
+.search_icon_image{
+  width: 23px;
+  height: 23px;
+}
+
+.search_icon:hover{
+  padding:18px 6px 11px 6px;
+  border-radius: 7px;
+  border: 1px solid #b8e986;
+  background: #f0f4f5;
+
+
 }
 
 /*************************************** On Trend Section ***************************************/
@@ -251,24 +303,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 121px;
   height: 141px;
   border-radius: 8px;
-
-/*   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08); */
-
-/* box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); */
-/* 
-box-shadow:
-  0 7px 30px -10px rgba(150,170,180,0.5); */
-
-  box-shadow:
-  0 10px 10px 10px rgba(150,170,180,0.5);
-
-  border: solid 0.1px #c8c8c8;
-  background-color: #ffffff;
-  margin-right: 10px;
+/*   box-shadow:
+  0 1px 10px 1px rgba(150,170,180,0.5); */
+ box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+ border: none;
+ background-color: #ffffff;
+ margin-right: 10px;
 }
 
 .card_image {
@@ -281,7 +324,7 @@ box-shadow:
 .card_content {
   width: 111px;
   height: 36px;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Regular;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -293,6 +336,47 @@ box-shadow:
   padding: 0px  8px;
 }
 
+/* full image card */
+
+.fullImageCard_container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 141px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+ border: none;
+ background: transparent;
+ margin-right: 10px;
+}
+
+
+.fullImageCard_image{
+  width: 121px;
+  height: 141px;
+  border-radius: 8px;
+  margin-bottom: -36px;
+
+}
+.fullImageCard_content{
+
+  font-family: SFUIDisplay-Regular;
+  font-size: 13px;
+
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  position: relative;
+  bottom: 15px;
+  padding: 0px  8px;
+ }
+
+
+
 .title_slider {
   display: flex;
   justify-content: center;
@@ -302,7 +386,7 @@ box-shadow:
 
 .slider_title {
 
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Regular;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -334,6 +418,7 @@ box-shadow:
   letter-spacing: normal;
   color: #16161d;
   margin-right: 13px;
+  margin-top: 13px;
 
 }
 
@@ -357,7 +442,7 @@ box-shadow:
   margin-left: -20px;
   top: 50%;
   margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px  #f7b500;
   border-radius: 25px;
 }
 
@@ -365,7 +450,7 @@ box-shadow:
   content: '';
   width: 4px;
   height: 4px;
-  background: #000;
+  background: #d3d3d3;
   margin-left: -2px;
   top: 8px;
   border-radius: 4px;
@@ -408,16 +493,25 @@ box-shadow:
 .link_categories {
   text-decoration: none;
 
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Regular;
   font-size: 16px;
 
   letter-spacing: 0.75px;
   color: #16161d;
 }
 
+.link_categories_selected {
+
+
+  font-family: PlayfairDisplay-Regular;
+  font-size: 20px;
+ 
+
+}
+
 .link_categories:hover{
   color: #b4e680;
-  font-size: 18px;
+  
   transition: .4s;
 }
 
@@ -435,6 +529,7 @@ box-shadow:
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 1351px;
 }
 
 
@@ -494,7 +589,7 @@ box-shadow:
 
 
 
-    font-family: SFUIDisplay;
+    font-family: SFUIDisplay-Regular;
     font-size: 13px;
 
     letter-spacing: 0.6px;
@@ -506,7 +601,7 @@ box-shadow:
 .BiggerImageCard_description {
   
 
-    font-family: SFUIDisplay;
+    font-family: SFUIDisplay-Regular;
     font-size: 17px;
 
     line-height: 1.41;
@@ -532,7 +627,7 @@ box-shadow:
 
 
 
-    font-family: SFUIDisplay;
+    font-family: SFUIDisplay-Regular;
     font-size: 14px;
 
     letter-spacing: 0.2px;
@@ -547,7 +642,7 @@ box-shadow:
 
 
 
-    font-family: SFUIDisplay;
+    font-family: SFUIDisplay-Regular;
     font-size: 13px;
 
     letter-spacing: 0.2px;
@@ -570,7 +665,7 @@ box-shadow:
 
 .viewAll_text {
   text-decoration: none;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Medium;
   font-size: 16px;
   font-weight: 500;
   color: #0d0321;
@@ -594,7 +689,7 @@ box-shadow:
 }
 .footer_upper_link {
   text-decoration: none;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Light;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -622,7 +717,7 @@ box-shadow:
 }
 .footer_lower_first_link{
 
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Light;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -638,7 +733,7 @@ box-shadow:
 
 .footer_lower_last_link{
 
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay-Light;
   font-size: 14px;
   font-weight: 300;
 
@@ -732,10 +827,19 @@ box-shadow:
   width: 18px;
   height: 18px;
 }
-.search_icon {
+
+.search_icon:hover{
+  padding:10px 5px 7px 5px;
+  border-radius: 6px;
+  
+ 
+
+
+}
+/* .search_icon {
   margin-left: -35px;
   margin-bottom: -27px;
-}
+} */
 
 
 
@@ -847,7 +951,10 @@ box-shadow:
 
 .AllCards_body_container{
   margin: 0px 40px;
+  width: 100%;
 }
+
+
 
 
 
