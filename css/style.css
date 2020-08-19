@@ -23,6 +23,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 /*************************************** Cover Section ***************************************/
 .cover {
   width: auto;
@@ -46,7 +53,7 @@
   padding-top: 49px;
 }
 .login {
-  font-family: SFUIDisplay-Regular;
+  font-family: SFUIDisplay-Bold;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -60,7 +67,7 @@
   border-right: 2px solid;
 }
 .signup {
-  font-family: SFUIDisplay-Regular;
+  font-family: SFUIDisplay-Bold;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -222,12 +229,21 @@
 /*the container must be positioned relative:*/
 .autocomplete {
   position: relative;
-  display: inline-block;
 
+  /*   display: inline-block; */
   width: 898px;
-  height: 43px;
+
+  /*  height: 43px; */
 
   box-shadow: 0px 1px #f0f4f5;
+  padding-bottom: 11px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.autocomplete:hover {
+  box-shadow: 0px 1px #b8e986;
 }
 
 input {
@@ -246,7 +262,7 @@ input {
   outline: none;
   padding-left: 21px;
 
-  border-radius: 6px 6px 0px 6px;
+  /* border-radius: 6px 6px 0px 6px; */
 }
 
 input[type="text"] {
@@ -254,9 +270,9 @@ input[type="text"] {
   width: 100%;
 }
 
-input:hover {
+/* input:hover {
   border-bottom: 1px solid #b8e986;
-}
+} */
 
 /* input[type=submit] {
   background-color: DodgerBlue;
@@ -266,29 +282,31 @@ input:hover {
 
 .searchButton {
   background: transparent;
+
   /*   margin-left: 27px; */
   margin-left: 0px;
+  margin-bottom: ;
 
   cursor: pointer;
-  border-radius: 7px;
-  height: 43px;
-  width: 32px;
-  border: none;
-  outline: none;
+  border-radius: 5px;
 
-  box-shadow: 0px 1px #f0f4f5;
+  height: 43px;
+  width: 35px;
+
+  border: none;
+  background: #b8e986;
+  outline: none;
 }
 
 .searchButton:hover {
-  border: 1px solid #b8e986;
-  background: #f0f4f5;
+  background: #9FE15B;
 }
 
 .searchButtonIcon {
   width: 23px;
   height: 23px;
-  padding-top: 5px;
-  padding-right: 5px;
+  /*   padding-top: 5px;
+  padding-right: 5px; */
 }
 
 .autocomplete-items {
@@ -305,17 +323,20 @@ input:hover {
   top: 100%;
   left: 0;
   right: 0;
+
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
 }
 
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
   background-color: #fff;
-  border-bottom: 1px solid #f0f4f5;
 
-  border-radius: 4px;
+  /* border-bottom: 1px solid #f0f4f5; */
 
   width: 100%;
+
+  font-family: SFUIDisplay-Regular;
 }
 
 /*when hovering an item:*/
@@ -373,6 +394,12 @@ input:hover {
   background-color: #ffffff;
   margin-right: 10px;
 }
+
+.card_container:hover{
+margin-top: -7px;
+
+}
+
 .card_image {
   width: 100px;
   height: 74px;
@@ -410,6 +437,10 @@ input:hover {
   background: transparent;
   margin-right: 10px;
 }
+.fullImageCard_container:hover{
+  margin-top: -7px;
+    }
+
 .fullImageCard_image {
   width: 121px;
   height: 141px;
@@ -464,8 +495,11 @@ input:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 94px;
-  position: relative;
+ /*  margin-top: 94px; */
+  position: absolute;
+ 
+  bottom:12px; 
+  right:50%;  
 }
 .explore_text {
   font-family: SFUIDisplay-Regular;
@@ -526,7 +560,9 @@ input:hover {
   justify-content: center;
   flex-direction: column;
   margin-top: 79px;
-  background-color: #f0f4f5;
+ /*  background-color: #f0f4f5; */
+ background: rgba(240,244,245,  0.64) ;
+  
 }
 
 .categories {
@@ -546,17 +582,72 @@ input:hover {
   font-size: 16px;
   letter-spacing: 0.75px;
   color: #16161d;
+
+  position: relative;
 }
 
 .link_categories_selected {
   font-family: PlayfairDisplay-Regular;
   font-size: 20px;
+  letter-spacing: 0.75px;
+  color: #16161d;
+  text-decoration: none;
+  position: relative;
 }
 
-.link_categories:hover {
+
+
+/* special hover underline effect */
+
+/* .link_categories:hover {
   color: #b4e680;
   transition: 0.4s;
+} */
+
+
+.link_categories:after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #92DD45;
+  transition: all 0.45s;
 }
+.link_categories:hover:after {
+  width: 100%;
+  left: 0;
+}
+.link_categories:hover {
+  text-decoration: none;
+  color: #b4e680;
+
+}
+
+/* ************************************ */
+.link_categories_selected:after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #92DD45;
+  transition: all 0.45s;
+}
+.link_categories_selected:hover:after {
+  width: 100%;
+  left: 0;
+}
+.link_categories_selected:hover {
+  text-decoration: none;
+ 
+
+}
+
+
+
 
 .oval_categories {
   width: 34px;
@@ -599,6 +690,7 @@ input:hover {
   border-radius: 10px;
 }
 
+
 .BiggerImageCard_body {
   background: #fff;
   width: 263px;
@@ -608,7 +700,146 @@ input:hover {
   padding: 29px;
   position: relative;
   bottom: 55px;
+ 
+}
+
+
+
+/* **********Card Body with logo************** */
+
+
+
+.bodyLogoContainer{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  float: right;
+  margin-top: -46px;
+  background-color: #ffffff;
+ 
+}
+
+.bodyLogoImage{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+ 
+}
+
+/*********************** Card body with bottom Content ******************************/
+
+.biggerImageCardBodyWithBottomContent{
+  background: #fff;
+  width: 263px;
+  height: 215px;
+  float: right;
+  border-radius: 10px 0px 10px 10px;
+  padding: 29px;
+  position: relative;
+  bottom: 75px;
+ 
+}
+
+.biggerImageCardBodyWithBottomContent:hover{
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+  bottom: 80px;
+  transition: .2s;
+}
+
+.cardBodyBottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 41px;
+
+  border-top: solid 1px #f0f4f5;
+  margin-top: 11px;
+
+}
+.view{
+  display: flex;
+   align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.viewIcon{
+  width: 20px;
+  height: 13px;
+  opacity: 40%;
+  /* background-color: #c8c5cf; */
+}
+.viewNumber{
+
+  font-family: SFUIDisplay-Regular;
+  font-size: 11px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #686671;
+  margin-left: 7px;
+}
+.like{
+
+  display: flex;
+  align-items: center;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ margin-left: 18px;
+
+}
+.likeIcon{
+  width: 15px;
+  height: 13px;
+  opacity: 40%;
+
+}
+.likeNumber{
+
+  font-family: SFUIDisplay-Regular;
+  font-size: 11px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #686671;
+  margin-left: 7px;
+
+}
+.saveShare{
+
+  display: flex;
+  align-items: center;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ margin-left: 80px;
+
+}
+.saveIcon{
+  width: 9px;
+  height: 13px;
+opacity: 40%;
+
+}
+.shareIcon{
+  width: 15px;
+  height: 14px;
+
+opacity: 40%;
+margin-left: 18px;
+
+}
+
+
+
+
+
+
+
+.BiggerImageCard_body:hover{
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+  bottom: 60px;
+  transition: .2s;
+
 }
 
 .BiggerImageCard_title {
@@ -1041,22 +1272,9 @@ input:hover {
   }
 
   input {
-
-
     width: 550px;
     height: 30px;
-
-  
   }
-
-
-
-
-
-
-
-
-
 
   /*********************************** On Trend ******************************************/
 
@@ -1234,8 +1452,7 @@ input:hover {
     margin-top: 40px;
   }
 
-
-/*   .container_search input {
+  /*   .container_search input {
     font-size: 12px;
 
     width: 400px;
@@ -1256,27 +1473,18 @@ input:hover {
 
   .autocomplete {
     width: 400px;
-  
   }
 
   input {
     font-size: 13px;
 
     width: 400px;
- 
-
-   
   }
-
-
 
   .searchButtonIcon {
     width: 20px;
     height: 20px;
-
   }
-
-
 
   /*********************************************** On Trend Section *********************************************/
 
@@ -1369,9 +1577,11 @@ input:hover {
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .footer_upper_link {
     font-size: 12px;
+   
   }
 
   .footer_lower {

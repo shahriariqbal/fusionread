@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+
     <link rel="icon" href="./img/Logo-Nav 1x.png" type="" sizes="16x16" />
     <title>Fusionread</title>
   </head>
@@ -25,9 +29,15 @@
     <!--  *******************************************Cover Section**************************************************** -->
 
     <section class="cover">
+
       <div class="bar">
         <div class="logo animate__animated animate__pulse">
-          <img class="logo_img" src="./img/Logo-Front.png" alt="" />
+          <img
+            class="logo_img"
+            draggable="false"
+            src="./img/Logo-Front.png"
+            alt=""
+          />
         </div>
 
         <div class="login_signup_publish">
@@ -35,16 +45,27 @@
 
           <p class="signup">SIGNUP</p>
 
-         <!--  <button class="publish">PUBLISH</button> -->
+          <!--  <button class="publish">PUBLISH</button> -->
 
-         <a class="publishButton" href=""><img class="publishButtonImage" src="./img/pub.png" alt=""> </a>
-
+          <a draggable="false" class="publishButton" href=""
+            ><img
+              draggable="false"
+              class="publishButtonImage"
+              src="./img/pub.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
 
       <div class="header-content">
-        <div class="point animate__animated animate__backInLeft">
-          <img class="point_image" src="./img/yellow point.png" alt="" />
+        <div class="point">
+          <img
+            draggable="false"
+            class="point_image"
+            src="./img/yellow point.png"
+            alt=""
+          />
         </div>
 
         <div class="header-text animate__animated animate__pulse">
@@ -60,9 +81,7 @@
       <!-- ***********************Search********************************** -->
 
       <div class="search">
-
-
-<!--         <div class="container_search">
+        <!--         <div class="container_search">
           <input
             class="search-input"
             type="text"
@@ -82,24 +101,32 @@
               id="myInput"
               type="text"
               name="myCountry"
-              placeholder="Country"
+              placeholder="search for articles, blog or any readings…"
             />
+
+            <button class="searchButton">
+              <img
+                class="searchButtonIcon"
+                draggable="false"
+                src="./img/Search1.png"
+                alt=""
+              />
+            </button>
           </div>
           <!--       <input type="submit" /> -->
-          <button class="searchButton">
-            <img class="searchButtonIcon" src="./img/Search1.png" alt="" />
-          </button>
         </form>
-
-
-
       </div>
 
       <!-- ***********************On Trend ********************************** -->
 
       <div class="ontrend">
-        <div class="point_yellow animate__animated animate__backInRight">
-          <img class="point_yellow_img" src="./img/yellow point.png" alt="" />
+        <div class="point_yellow">
+          <img
+            draggable="false"
+            class="point_yellow_img"
+            src="./img/yellow point.png"
+            alt=""
+          />
         </div>
 
         <div class="title_slider">
@@ -173,13 +200,25 @@
           </div>
 
           <div class="sliderChangeArrow">
-            <a class="sliderChangeArrowBtn" style="color: #817c8a;" href=""> < </a>
-            <a class="sliderChangeArrowBtn" href=""> > </a>
+            <a
+              draggable="false"
+              class="sliderChangeArrowBtn"
+              style="color: #817c8a;"
+              href=""
+            >
+              <
+            </a>
+            <a draggable="false" class="sliderChangeArrowBtn" href=""> > </a>
           </div>
         </div>
 
-        <div class="point_red animate__animated animate__backInDown">
-          <img class="point_yellow_img" src="./img/red point.png" alt="" />
+        <div class="point_red">
+          <img
+            draggable="false"
+            class="point_yellow_img"
+            src="./img/red point.png"
+            alt=""
+          />
         </div>
       </div>
 
@@ -191,6 +230,9 @@
           Scroll down to explore!
         </p>
       </div>
+
+
+
     </section>
 
     <!-- ****************************************************Main Body Section ************************************* -->
@@ -204,7 +246,7 @@
         <div class="oval_categories"></div>
 
         <div>
-          <a class="link_categories link_categories_selected" href="">
+          <a class="link_categories_selected" href="">
             Recommend
           </a>
         </div>
@@ -220,8 +262,8 @@
 
       <!-- ********************************** Body Card ***************** -->
 
-      <div class="AllCards_body_container">
-        <div class="BiggerImageCard_container">
+      <div data-aos="fade-up" class="AllCards_body_container">
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -240,7 +282,96 @@
           </div>
         </div>
 
-        <div class="BiggerImageCard_container">
+        <!--      /* **********Card Body with logo************** */ -->
+
+        <div data-aos="fade-up" class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+
+          <div class="BiggerImageCard_body">
+            <div class="bodyLogoContainer">
+              <img
+                class="bodyLogoImage"
+                draggable="false"
+                src="./img/Logo-Nav 1x.png"
+                alt=""
+              />
+            </div>
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+          </div>
+        </div>
+
+        <!--    /*********************** Card body with bottom Content ******************************/ -->
+
+        <div data-aos="fade-up" class="BiggerImageCard_container">
+          <div class="BiggerImageCard_image_container">
+            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
+          </div>
+
+          <div class="biggerImageCardBodyWithBottomContent">
+            <p class="BiggerImageCard_title">UX Design</p>
+
+            <p class="BiggerImageCard_description">
+              Wednesday Holmes: Art as an Act of Survival
+            </p>
+
+            <div class="BiggerImageCard_underline"></div>
+
+            <p class="BiggerImageCard_author">By Jonathan Doe</p>
+
+            <p class="BiggerImageCard_date">27 mins ago</p>
+
+            <div class="cardBodyBottomContent">
+              <div class="view">
+                <img
+                  draggable="false"
+                  class="viewIcon"
+                  src="./img/Vision.png"
+                  alt=""
+                />
+                <p class="viewNumber">512</p>
+              </div>
+
+              <div class="like">
+                <img
+                  draggable="false"
+                  class="likeIcon"
+                  src="./img/Love.png"
+                  alt=""
+                />
+                <p class="likeNumber">113</p>
+              </div>
+
+              <div class="saveShare">
+                <img
+                  draggable="false"
+                  class="saveIcon"
+                  src="./img/Bookmark.png"
+                  alt=""
+                />
+                <img
+                  draggable="false"
+                  class="shareIcon"
+                  src="./img/Share.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -259,7 +390,7 @@
           </div>
         </div>
 
-        <div class="BiggerImageCard_container">
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -278,7 +409,7 @@
           </div>
         </div>
 
-        <div class="BiggerImageCard_container">
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -297,7 +428,7 @@
           </div>
         </div>
 
-        <div class="BiggerImageCard_container">
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -316,45 +447,7 @@
           </div>
         </div>
 
-        <div class="BiggerImageCard_container">
-          <div class="BiggerImageCard_image_container">
-            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
-          </div>
-          <div class="BiggerImageCard_body">
-            <p class="BiggerImageCard_title">UX Design</p>
-
-            <p class="BiggerImageCard_description">
-              Wednesday Holmes: Art as an Act of Survival
-            </p>
-
-            <div class="BiggerImageCard_underline"></div>
-
-            <p class="BiggerImageCard_author">By Jonathan Doe</p>
-
-            <p class="BiggerImageCard_date">27 mins ago</p>
-          </div>
-        </div>
-
-        <div class="BiggerImageCard_container">
-          <div class="BiggerImageCard_image_container">
-            <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
-          </div>
-          <div class="BiggerImageCard_body">
-            <p class="BiggerImageCard_title">UX Design</p>
-
-            <p class="BiggerImageCard_description">
-              Wednesday Holmes: Art as an Act of Survival
-            </p>
-
-            <div class="BiggerImageCard_underline"></div>
-
-            <p class="BiggerImageCard_author">By Jonathan Doe</p>
-
-            <p class="BiggerImageCard_date">27 mins ago</p>
-          </div>
-        </div>
-
-        <div class="BiggerImageCard_container">
+        <div data-aos="fade-up" class="BiggerImageCard_container">
           <div class="BiggerImageCard_image_container">
             <img class="BiggerImageCard_image" src="./img/demo.jpg" alt="" />
           </div>
@@ -386,8 +479,9 @@
 
     <section class="footer">
       <div class="footer_upper">
-        <a href="" style="text-decoration: none;">
-          <img src="./img/Cursor.png" alt="" />
+        <a href="" style="text-decoration: none; ">
+          <img style=" width: 18px;
+          height: 18px; margin-bottom: -2px;" src="./img/Cursor.png" alt="" />
         </a>
         <a style="border-left: 0px;" class="footer_upper_link" href="">
           V4M2C1
@@ -422,6 +516,11 @@
       </div>
     </section>
 
+    <!-- jquery first then javascript -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
   </body>
 </html>
