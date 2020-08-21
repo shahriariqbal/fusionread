@@ -3,33 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    /> -->
-
+    <!--    Reload Page Animation  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <!-- Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Local Css Files -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- scroll animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
 
     <link rel="icon" href="./img/Logo-Nav 1x.png" type="" sizes="16x16" />
     <title>Fusionread</title>
   </head>
 
   <body>
+
+   
     <!--  *******************************************Cover Section**************************************************** -->
 
-    <section class="cover">
 
+
+    <section class="cover">
       <div class="bar">
         <div class="logo animate__animated animate__pulse">
           <img
@@ -200,15 +198,12 @@
           </div>
 
           <div class="sliderChangeArrow">
-            <a
-              draggable="false"
-              class="sliderChangeArrowBtn"
-              style="color: #817c8a;"
-              href=""
-            >
-              <
+            <a draggable="false" class="sliderChangeArrowBtn" href="">
+              <img draggable="false" style="opacity: .5;"  src="./img/arrowleft.png" alt="" />
             </a>
-            <a draggable="false" class="sliderChangeArrowBtn" href=""> > </a>
+            <a draggable="false" class="sliderChangeArrowBtn" href="">
+              <img  draggable="false"src="./img/arrowRight.png" alt="" />
+            </a>
           </div>
         </div>
 
@@ -230,14 +225,13 @@
           Scroll down to explore!
         </p>
       </div>
-
-
-
     </section>
+
+<section  ></section>
 
     <!-- ****************************************************Main Body Section ************************************* -->
 
-    <section class="body_content">
+    <section   class="body_content">
       <!-- ****************************Categories ***************** -->
 
       <div class="categories">
@@ -475,13 +469,18 @@
       </div>
     </section>
 
+    <section  ></section>
+
     <!--  **************************************************************Footer Section ***************************************************** -->
 
-    <section class="footer">
+    <section  class="footer">
       <div class="footer_upper">
-        <a href="" style="text-decoration: none; ">
-          <img style=" width: 18px;
-          height: 18px; margin-bottom: -2px;" src="./img/Cursor.png" alt="" />
+        <a href="" style="text-decoration: none;">
+          <img
+            style="width: 18px; height: 18px; margin-bottom: -2px;"
+            src="./img/Cursor.png"
+            alt=""
+          />
         </a>
         <a style="border-left: 0px;" class="footer_upper_link" href="">
           V4M2C1
@@ -516,11 +515,9 @@
       </div>
     </section>
 
-    <!-- jquery first then javascript -->
-    <script src="./js/jquery-3.5.1.min.js"></script>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/fullpage.js"></script>
   </body>
 </html>
